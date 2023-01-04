@@ -100,6 +100,7 @@ h3 {
 
 #slider_container {
     position: relative;
+    bottom: 30px;
 }
 
 .wrapper1 {
