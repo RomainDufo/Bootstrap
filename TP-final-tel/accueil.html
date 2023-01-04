@@ -154,23 +154,35 @@
 
     </div>
 
-    <nav class="navbar fixed-bottom navbar-expand-lg bg-dark navbar-dark text-center">
-        <div class="container">
+   <nav class="navbar fixed-bottom navbar-expand-lg bg-dark navbar-dark text-center">
+        <div class="container-fluid">
             <div class="d-flex">
                 <a class="navbar-brand" href="#"> <img src="accueil.png" alt="accueil"> <br> Accueil</a>
                 <a class="navbar-brand" href="#"> <img src="séries.png" alt="séries"> <br> Séries</a>
             </div>
+
             <div id="cercle_container" class="bg-dark">
-                <button id="bouton_navbar"><img src="loupe.png" alt="loupe"></button>
+                <button id="bouton_navbar" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="loupe.png" alt="loupe">
+                </button>
                 <p id="text_recherche" class="text-light">Rechercher</p>
             </div>
             <div class="d-flex">
                 <a class="navbar-brand" href="#"> <img src="films.png" alt="films"> <br> Films</a>
                 <a class="navbar-brand" href="#"> <img src="moi.png" alt="moi"> <br> Moi</a>
             </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Séries, films, personnages,..."
+                        aria-label="Search">
+                </form>
+            </div>
         </div>
-        
     </nav>
+
+    
 </body>
 
 </html>
