@@ -17,22 +17,29 @@
 <body class="bg-black">
     <nav class="navbar bg-body-tertiary text-light p-0">
         <div class="container-fluid bg-black">
-            <a class="navbar-brand" href="accueil.html"><img src="bedflix-logo.png" alt="logo" width="100px" height="50px"></a>
+            <a class="navbar-brand" href="accueil.html">
+                <img src="bedflix-logo.png" alt="logo" width="100px" height="50px">
+            </a>
 
-            <a class="nav-link active" href="#">Accueil</a>
-            <a class="nav-link" href="#">Séries</a>
-            <a class="nav-link" href="#">Films</a>
+            <div id="lien_navbar" class="me-auto">
+                <a class="nav-link active" href="#">Accueil</a>
+                <a class="nav-link" href="#">Séries</a>
+                <a class="nav-link" href="#">Films</a>
+            </div>
 
             <form class="col-3">
-                <div class="input-group-sm">
-                    <span class="input-text bg-black rounded-0" id="basic-addon1"><img src="recherche.png"
-                            alt="recherche"></span>
-                    <input type="text" class="form-control bg-black text-light rounded-0 input" placeholder="Titre, genres, ..."
-                        aria-label="Username" aria-describedby="basic-addon1">
+                <div id="barre_recherche" class="input-group me-2">
+                    <span id="loupe" class="input-group-text bg-black rounded-0 " id="basic-addon1"><img
+                            src="recherche.png" alt="recherche"></span>
+                    <input id="barre" type="text" class="form-control bg-black text-light rounded-0 input"
+                        placeholder="Titre, genres, ..." aria-label="Username" aria-describedby="basic-addon1">
                 </div>
             </form>
-            <a href="#"><img src="cloche.png" alt="cloche" width="30px" height="30px"></a>
-            <a href="#"><img src="woman.png" alt="woman" width="35px" height="35px"></a>
+
+            <div id="image_navbar">
+                <a href="#"><img src="cloche.png" alt="cloche" width="30px" height="30px"></a>
+                <a href="#"><img src="woman.png" alt="woman" width="35px" height="35px"></a>
+            </div>
         </div>
     </nav>
 
@@ -43,7 +50,7 @@
                 <img src="b-log.png" alt="b">
                 <h3 class="text-light">SERIE</h3>
                 <div class="text-light">
-                    <h3>JUMANJI</h3>
+                    <h3 id="jumanji">JUMANJI</h3>
                     <p>Regardez la première saison !</p>
                     <p>Consectetur adipiscing elit duis tristique
                         sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula
@@ -64,18 +71,23 @@
                 <section id="section1">
                     <a href="#section3" class="arrow__btn">‹</a>
                     <div class="item">
+                        <span class="logo"></span>
                         <img src="card.png">
                     </div>
                     <div class="item">
+                        <span class="logo"></span>
                         <img src="card1.png">
                     </div>
                     <div class="item">
+                        <span class="logo"></span>
                         <img src="card2.png">
                     </div>
                     <div class="item">
+                        <span class="logo"></span>
                         <img src="card3.png">
                     </div>
                     <div class="item">
+                        <span class="logo"></span>
                         <img src="card4.png">
                     </div>
                     <a href="#section2" class="arrow__btn">›</a>
@@ -101,18 +113,23 @@
                 <section id="section4">
                     <a href="#section6" class="arrow__btn">‹</a>
                     <div class="item">
+                        <span class="logo"></span>
                         <img src="card-bis.png">
                     </div>
                     <div class="item">
+                        <span class="logo"></span>
                         <img src="card-bis1.png">
                     </div>
                     <div class="item">
+                        <span class="logo"></span>
                         <img src="card-bis2.png">
                     </div>
                     <div class="item">
+                        <span class="logo"></span>
                         <img src="card-bis3.png">
                     </div>
                     <div class="item">
+                        <span class="logo"></span>
                         <img src="card-bis4.png">
                     </div>
                     <a href="#section5" class="arrow__btn">›</a>
@@ -134,8 +151,8 @@
 
     </div>
 
-    <footer id="footer">
-        <div>
+    <footer id="footer" class="position-absolute start-50">
+        <div id="reseaux_footer">
             <a href="#"><img src="facebook.svg" alt="facebook"></a>
             <a href="#"></a><img src="instagram.svg" alt="instagram">
             <a href="#"><img src="twitter.svg" alt="twitter"></a>
