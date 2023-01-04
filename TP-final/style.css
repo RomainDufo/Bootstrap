@@ -59,7 +59,35 @@ h3 {
     right: 20px;
 }
 
+/*---- FIN NAVBAR -----*/
 /*------------------------------*/
+/*----- DROPDOWN -----*/
+.tabGenre {
+    width: 300px;
+    height: 120px;
+    background-color: black;
+    color: white;
+    text-align: justify;
+    padding: 5px;
+    display: none;
+    position: absolute;
+    top: 190px;
+    left: 150px;
+    font-size: 10px;
+}
+
+#btn {
+    position: absolute;
+    top: 155px;
+    left: 150px;
+
+}
+
+#btn:focus~.tabGenre {
+    display: block;
+}
+
+/*----- FIN DROPDOWN -----*/
 /*----- SLIDER -----*/
 
 #slider_container {
